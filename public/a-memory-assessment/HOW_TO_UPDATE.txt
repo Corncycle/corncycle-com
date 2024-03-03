@@ -1,0 +1,6 @@
+this is just a note for me, corncycle
+
+to update the build of matcher:
+1) delete all files in `a-memory-assessment` aside from `index.html`, `style.css`, and `HOW_TO_UPDATE.txt`
+2) copy all files from `dist`, aside from `index.html`, in a `matcher` repo into `a-memory-assessment` after running `npm run build`
+3) git add . git commit and git push to `corncycle-com` and github actions should automatically deploy the changes
