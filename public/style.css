@@ -26,10 +26,16 @@ body {
     justify-content: center;
 }
 
+.title-text-container {
+    display: flex;
+    justify-content: center;
+}
+
 .title-text {
     font-size: 3rem;
     font-weight: bolder;
-    line-height: 0;
+    line-height: 1;
+    height: 100%;
     cursor: default;
 }
 

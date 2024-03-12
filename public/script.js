@@ -1,4 +1,4 @@
-const title = document.querySelector('.title-text')
+const titleItems = document.querySelectorAll('.title-text')
 const fonts = [
   'cursive', // probably only comic sans on desktop
   '"Andale Mono", monospace',
@@ -10,15 +10,19 @@ const fonts = [
   'system-ui',
 ]
 
-const changeTitleFont = () => {
-  const f = fonts.filter((font) => font !== title.style.fontFamily)
-  title.style.fontFamily = f[Math.floor(Math.random() * f.length)]
+const changeFont = (elt) => {
+  const f = fonts.filter((font) => font !== elt.style.fontFamily)
+  elt.style.fontFamily = f[Math.floor(Math.random() * f.length)]
 }
 
-title.addEventListener('mouseover', () => {
-  changeTitleFont()
+titleItems.forEach((item) => {
+  item.addEventListener('mouseover', () => {
+    changeFont(item)
+  })
 })
 
-title.addEventListener('mouseleave', () => {
-  changeTitleFont()
-})
+// titleItems.forEach((item) => {
+//   item.addEventListener('mouseleave', () => {
+//     changeFont(item)
+//   })
+// })
