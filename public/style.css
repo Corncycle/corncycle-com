@@ -1,5 +1,38 @@
+:root {
+    font-family: monospace;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
+}
+
+hr {
+    width: min(max(30%, 20rem), 90%);
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 0;
+}
+
+button {
+    /* reset default styles */
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font: inherit;
+
+    /* new styles */
+    padding: 0.4rem 1.2rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: silver;
+}
+
+button:active {
+    background: grey;
 }
 
 html, body {
@@ -8,9 +41,13 @@ html, body {
 }
 
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .main-container {
@@ -42,4 +79,17 @@ body {
 .content-container {
     width: 100%;
     text-align: center;
+}
+
+.items-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.github-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
