@@ -65,7 +65,7 @@ const explodeItem = (elt) => {
 
     elt.style.transform = `translate(${x}px, ${y}px) rotate(${theta}turn)`
 
-    if (y > 1000) {
+    if (y > 2000) {
       return
     }
 
