@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-    width: min(max(30%, 20rem), 90%);
+    width: min(max(30%, 20rem), 40rem, 100%);
     border: none;
     border-top: 1px solid black;
     border-bottom: 0;
@@ -48,6 +48,7 @@ body {
     gap: 1rem;
     flex-direction: column;
     overflow: hidden;
+    padding: 0px 10px;
 }
 
 .main-container {
@@ -92,4 +93,9 @@ body {
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+.danger {
+    font-weight: bold;
+    color: red;
 }
